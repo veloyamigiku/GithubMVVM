@@ -18,6 +18,8 @@
 		38D0B33C2399105E00E2702D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D0B33B2399105E00E2702D /* ImageDownloader.swift */; };
 		38D37405239E5072000820F1 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D37404239E5072000820F1 /* UserListViewModel.swift */; };
 		38D37407239E547B000820F1 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D37406239E547B000820F1 /* UserCellViewModel.swift */; };
+		38D7611F23A23F8F00DFCB59 /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D7611D23A23F8F00DFCB59 /* TimeLineCell.swift */; };
+		38D7612023A23F8F00DFCB59 /* TimeLineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38D7611E23A23F8F00DFCB59 /* TimeLineCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		38D0B33B2399105E00E2702D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		38D37404239E5072000820F1 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		38D37406239E547B000820F1 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		38D7611D23A23F8F00DFCB59 /* TimeLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		38D7611E23A23F8F00DFCB59 /* TimeLineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeLineCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		3851E069239743F1002AE95F /* GithubMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				38D7611823A23DA900DFCB59 /* View */,
 				38D37403239E5042000820F1 /* ModelView */,
 				3851E07E23974477002AE95F /* Model */,
 				3851E06A239743F1002AE95F /* AppDelegate.swift */,
@@ -96,6 +101,15 @@
 				38D37406239E547B000820F1 /* UserCellViewModel.swift */,
 			);
 			path = ModelView;
+			sourceTree = "<group>";
+		};
+		38D7611823A23DA900DFCB59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				38D7611D23A23F8F00DFCB59 /* TimeLineCell.swift */,
+				38D7611E23A23F8F00DFCB59 /* TimeLineCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D7612023A23F8F00DFCB59 /* TimeLineCell.xib in Resources */,
 				3851E077239743F2002AE95F /* LaunchScreen.storyboard in Resources */,
 				3851E074239743F2002AE95F /* Assets.xcassets in Resources */,
 				3851E072239743F1002AE95F /* Main.storyboard in Resources */,
@@ -175,6 +190,7 @@
 				3851E06B239743F1002AE95F /* AppDelegate.swift in Sources */,
 				3851E06D239743F1002AE95F /* SceneDelegate.swift in Sources */,
 				38D37407239E547B000820F1 /* UserCellViewModel.swift in Sources */,
+				38D7611F23A23F8F00DFCB59 /* TimeLineCell.swift in Sources */,
 				38D0B33C2399105E00E2702D /* ImageDownloader.swift in Sources */,
 				3851E082239745D4002AE95F /* API.swift in Sources */,
 			);
