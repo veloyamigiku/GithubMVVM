@@ -21,6 +21,7 @@ final class UserListViewModel {
     var stateDidUpdate: ((ViewModelState) -> Void)?
     
     // Userの配列を宣言する。
+    // MVCでは、Viewが持っていた。
     private var users = [User]()
     
     var cellViewModels = [UserCellViewModel]()
@@ -28,6 +29,7 @@ final class UserListViewModel {
     // APIのインスタンスのプロパティを宣言する。
     let api = API()
     
+    // ViewModel経由で、Modelのデータを参照するインタフェースを用意する。
     func getUsers() {
         
         // 通信状態を通知する。
@@ -51,6 +53,7 @@ final class UserListViewModel {
             })
     }
     
+    // ViewModel経由で、Modelのデータを参照するインタフェースを用意する。
     func usersCount() -> Int {
         return users.count
     }

@@ -16,7 +16,7 @@ final class User {
     init(attributes: [String: Any]) {
         id = attributes["id"] as! Int
         name = attributes["login"] as! String
-        iconUrl = attributes["avator_url"] as! String
+        iconUrl = attributes["avatar_url"] as! String
         webURL = attributes["html_url"] as! String
     }
     

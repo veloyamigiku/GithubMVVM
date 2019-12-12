@@ -18,6 +18,7 @@ enum ImageDownloadProgress {
 class UserCellViewModel: NSObject {
     
     // ユーザのプロパティを宣言する。
+    // MVCでは、Viewが持っていた。
     private var user: User
     
     // 画像ダウンローダのプロパティを宣言する。
@@ -26,10 +27,12 @@ class UserCellViewModel: NSObject {
     // 画像ダウンロード中かのプロパティを宣言する。
     private var isLoading = false
     
+    // ViewModel経由で、Modelのデータを参照するインタフェースを用意する。
     var nickName: String {
         return user.name
     }
     
+    // ViewModel経由で、Modelのデータを参照するインタフェースを用意する。
     var webURL: URL {
         return URL(string: user.webURL)!
     }
@@ -38,6 +41,7 @@ class UserCellViewModel: NSObject {
         self.user = user
     }
     
+    // ViewModel経由で、Modelのデータを参照するインタフェースを用意する。
     func downloadImage(progress: @escaping (ImageDownloadProgress) -> Void) {
         
         if isLoading == true {
